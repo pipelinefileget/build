@@ -1,9 +1,0 @@
-apiVersion: build.openshift.io/v1
-kind: BuildConfig
-metadata:
-  name: "nodejs-sample-pipeline"
-spec:
-  strategy:
-    jenkinsPipelineStrategy:
-      jenkinsfile: <pipeline content from below>
-    type: JenkinsPipeline
