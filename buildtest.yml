@@ -7,3 +7,5 @@ spec:
     jenkinsPipelineStrategy:
       jenkinsfile: <pipeline content from below>
     type: JenkinsPipeline
+  triggers:
+    - type: ConfigChange
