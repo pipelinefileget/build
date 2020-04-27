@@ -1,14 +1,9 @@
 apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
-  labels:
-    name: pipeline-build
-  name: pipeline-build
-  namespace: dev05
+  name: "nodejs-sample-pipeline"
 spec:
   strategy:
     jenkinsPipelineStrategy:
       jenkinsfile: <pipeline content from below>
     type: JenkinsPipeline
-  triggers:
-    - type: ConfigChange
