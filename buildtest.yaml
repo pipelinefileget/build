@@ -8,12 +8,7 @@ metadata:
 spec:
   strategy:
     jenkinsPipelineStrategy:
-      jenkinsfile: |-
-        node('nodejs') {
-          stage('build') {
-            sh 'npm --version'
-          }
-        }
+      jenkinsfile: <pipeline content from below>
     type: JenkinsPipeline
   triggers:
     - type: ConfigChange
