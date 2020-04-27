@@ -1,7 +1,10 @@
-kind: BuildConfig
 apiVersion: build.openshift.io/v1
+kind: BuildConfig
 metadata:
-  name: "nodejs-sample-pipeline"
+  labels:
+    name: pipeline-build
+  name: pipeline-build
+  namespace: dev05
 spec:
   strategy:
     jenkinsPipelineStrategy:
